@@ -1,3 +1,10 @@
 name: cf-nodejs
 manifest: manifest.yml
 space: test-review-apps
+services:
+- name: s3
+  service: s3
+  plan: basic
+- name: psql
+  service: aws-rds
+  plan: shared-psql

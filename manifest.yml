@@ -5,6 +5,9 @@ applications:
   instances: 1
   host: haxed-test
   random-route: false
+  services:
+  - s3
+  - psql
 random-route: true
 env:
   foo: bar

@@ -5,6 +5,11 @@ services:
 - name: s3
   service: s3
   plan: basic
+  tags:
+  - foo
+  - bar
+  config:
+    foo: bar
 - name: psql
   service: aws-rds
   plan: shared-psql

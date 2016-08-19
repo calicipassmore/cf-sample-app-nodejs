@@ -3,4 +3,11 @@ applications:
 - name: cf-nodejs
   memory: 128M
   instances: 1
-  random-route: true
+  host: haxed-test
+  random-route: false
+  services:
+  - s3
+  - psql
+random-route: true
+env:
+  foo: bar
